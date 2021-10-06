@@ -1,34 +1,96 @@
 <!DOCTYPE html>
 <html>
+<title>Happy Blobs</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-<head>
-  <title>Happy Blobs</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
-  <link rel='stylesheet' href='/stylesheets/style.css' />
-  <link rel='stylesheet' href='/stylesheets/carousel.css' />
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet"> 
-</head>
 <body>
-  <div class="container">
-    <div class="content">
-      <h1 class="title">Happy Blobs</h1>
-      <p>
-        Minted 5000 blobs in the last 24 hours.
-      </p>
-      <p>
-        Minted price 0.06ETH
-      </p>
-    </div>
-    <div class="player">
-      <div class="progress-bar">
-        <span class="progress"></span>
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <a href="#home" class="w3-bar-item w3-button"><b>Happy</b>Blobs</a>
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="#top" class="w3-bar-item w3-button">Top</a>
+        <a href="#collection" class="w3-bar-item w3-button">Collection</a>
+        <a href="#roadmap" class="w3-bar-item w3-button">Roadmap</a>
       </div>
     </div>
+  </div>
+  <!-- Header -->
+  <header class=" w3-display-container bg w3-wide" id="home">
+    <img style="width: 100%; height: 100vh;" src="../images/space3.jpg" alt="background">
+
+    <div class="w3-display-middle w3-margin-top">
+      <div>
+        <h1 class="w3-xxxlarge w3-text-black"><span class="w3-padding w3-white "><b>Happy</b></span> <span
+            class="w3-hide-small w3-text-white">Blobs</span></h1>
+        <p class="w3-xlarge w3-text-white"> Minted 10000 / 00000 </p>
+        <div class="w3-border">
+          <div class="w3-grey" style="height:24px;width:20%"></div>
+        </div>
+        <p class="w3-xlarge w3-text-white"> Mint price: 0.06 ETH</p>
+      </div>
     </div>
-    <div class="container">
-      <img src="../public/images/1.png" alt="blob">
+  </header>
+  <div class="  w3-purple">
+    <div class="w3-content w3-padding  " style="max-width:60%; height: 20vh;">
+      <h1> Blobs taking over the universe</h1>
+    <p><b>Happy Blobs is a specie of overly positive blobs. These blobs are searched </b>
+    <b>on the metaverse on search of the most happiest blob</b></p>
+  </div>
+  </div>
+  <!-- Page content -->
+  <div class="w3-content w3-padding" style="max-width:80%">
+
+    <!-- Project Section -->
+    <div class="w3-container w3-padding-32" id="projects">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Meet the crew</h3>
+      
+     
+      
+     
     </div>
-</body>
+    <div class="section group w3-content"style="max-width:20%" >
+      <div class="col span_1_of_5"><img class="mySlides" src="../images/1.png" style="width:100%"></div>    
+      <div class="col span_1_of_5"><img class="mySlides" src="../images/2.png" style="width:100%"></div>
+      <div class="col span_1_of_5"><img class="mySlides" src="../images/3.png" style="width:100%"></div>
+      <div class="col span_1_of_5"><img class="mySlides" src="../images/4.png" style="width:100%"></div>
+      <div class="col span_1_of_5"><img class="mySlides" src="../images/5.png" style="width:100%"></div> 
+  </div>
+    <!-- About Section -->
+    <div class="w3-container w3-padding-32" id="about">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Roadmap</h3>
+      <h1>In development</h1>
+    </div>
+
+    <!-- End page content -->
+  </div>
+
+
+  <!-- Footer -->
+  <!-- <footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer> -->
+<script>
+  var slideIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); 
+  }
+  </script>
+  </body>
+
 </html>
