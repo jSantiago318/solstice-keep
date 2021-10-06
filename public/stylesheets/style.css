@@ -1,0 +1,55 @@
+    /* font-family: 'Lato', sans-serif;
+
+    font-family: 'PT Serif', serif; */
+
+body {
+  padding: 0;
+  background-color: #FBFCFF;
+}
+
+
+.title{
+  font-size: 3em;
+  font-family: 'Lato', sans-serif;
+}
+
+
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.container{
+  background-color: #37515F;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  height: 100vh;
+}
+
+.container p{
+  font-size: 1.5em;
+  font-family: 'Space Mono', monospace;
+}
+
+.container img{
+  width: 100%;
+  height: 100%;
+}
+
+.progress-bar {
+  height: 0.5em;
+  width: 100%;
+  background-color: #e9efff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  display: block;
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background-color: #2992dc;
+  border-radius: 5px;
+}
